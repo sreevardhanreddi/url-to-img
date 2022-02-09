@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  url-to-img:
+    container_name: url-to-img
+    image: url-to-img:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: --url=https://github.com/ --width=400 --height=640
+    volumes:
+      - ${PWD}/media:/media
+    restart: on-failure:10
