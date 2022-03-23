@@ -16,7 +16,7 @@ run the image with following parameters
 
 ```shell
 
-docker run --volume $PWD/media:/media url-to-img --url=https://github.com --width=1920 --height=1080
+docker run --volume $PWD/media:/media sreevardhanreddi/url-to-img:latest --url=https://github.com --width=1920 --height=1080
 
 ```
 

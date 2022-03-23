@@ -3,7 +3,7 @@ version: "3.7"
 services:
   url-to-img:
     container_name: url-to-img
-    image: url-to-img:latest
+    image: sreevardhanreddi/url-to-img:latest
     build:
       context: .
       dockerfile: Dockerfile
