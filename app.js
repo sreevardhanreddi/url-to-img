@@ -35,7 +35,7 @@ const takeScreenShot = async (
   let imageName = url.pathname.split("/").slice(-1)[0];
   let imagePath = url.pathname.replace(imageName, "");
   imageName = imageName ? imageName : url.host;
-  let finalImagePath = `/media/${imagePath}${imageName}.gen.png`;
+  let finalImagePath = `/media/${imagePath}${imageName}.gen.webp`;
   await fs.mkdir(`/media/${imagePath}`, { recursive: true }, () => {});
   await page.screenshot({ path: finalImagePath });
   await browser.close();
